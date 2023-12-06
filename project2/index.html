@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width", initial-scale="1">
+<title>Easter Date Calculator</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Easter Date Calculator</h1>
+        <img src="eastercalculator.jpg" alt="Easter Calculator Image" id="calculator-image">
+        <form method="POST" action="/cgi-bin/easter.py">
+        <label for="year">Enter year:</label>
+        <input type="number" id="year" name="year" required>
+        <p>Choose Format:</p>
+        <input type="radio" id="numeric" name="Format" value="numeric" checked>
+        <label for="numeric">Numerically (dd/mm/yy)</label><br>
+        <input type="radio" id="verbose" name="Format" value="verbose">
+        <label for="verbose">Verbosely (12th April 2020)</label><br>
+        <input type="radio" id="both" name="Format" value="verbose">
+        <label for="both">Both Formats</label><br>
+        <input type="submit" value="Find Easter Date">
+        </form>
+    </div>
+</body>
+</html>
